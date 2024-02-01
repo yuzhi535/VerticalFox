@@ -44,5 +44,5 @@ a custom firefox theme. containing features below:
 * titlebar is hidden always.
 * homepage background image is from [unsplash](https://unsplash.com/).
 
-![demo](./imgs/demo%20-%20Made%20with%20Clipchamp.gif)
+![demo](./imgs/demo_for_customized_firefox.gif)
 
