@@ -1,0 +1,9 @@
+@-moz-document url-prefix("about:newtab"), url-prefix("about:home") { /*this modifies the new tab page for cleaner look*/
+    .releasenote { /*makes Support and Release Note invincible*/
+        color: #ffffff00 !important;
+      }
+      body{
+        background: url(https://source.unsplash.com/random/1920x1080/?landscapes) !important; background-size: cover !important;
+      }
+    }
+
