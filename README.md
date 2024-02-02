@@ -6,6 +6,7 @@ a custom firefox theme. containing features below:
 * compact mode
 * random background image for new tab
 * remove title bar
+* find bar is placed left upper corner rather than bottom
 
 ## prequisite
 
