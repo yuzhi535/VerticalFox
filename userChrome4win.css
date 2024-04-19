@@ -208,7 +208,7 @@ See the above repository for updates as well as full license text. */
 /* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
 
 #sidebar-box{
-  --uc-sidebar-width: 240px;
+  --uc-sidebar-width: 32px;
   --uc-sidebar-hover-width: 240px;
   --uc-autohide-sidebar-delay: 50ms; /* Wait 0.6s before hiding sidebar */
   --uc-autohide-transition-duration: 115ms;
