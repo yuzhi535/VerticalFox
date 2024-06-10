@@ -394,3 +394,7 @@ findbar::after{
   }
 }
 
+/* ~~~~~~~~ Hidden elements styles ~~~~~~~~~ */
+#sidebar-header {
+	display: none !important;
+}
