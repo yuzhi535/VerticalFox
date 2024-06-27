@@ -3,7 +3,7 @@
         color: #ffffff00 !important;
       }
       body{
-        background: url(https://picsum.photos/1920/1080?random) !important; background-size: cover !important;
+        background: url(https://random-image-pepebigotes.vercel.app/api/random-image) !important; background-size: cover !important;
       }
     }
 
