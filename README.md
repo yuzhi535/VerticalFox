@@ -19,7 +19,7 @@ a custom firefox theme. containing features below:
 
 ### For windows
 
-1. find your firefox profile folder (visit `about:profiles` ). 
+1. find your firefox profile folder (visit `about:profiles`, click the `root directory` of default-release panel). 
 2. create a folder named `chrome` in it.
 3. copy `userChrome4win.css`, `userContent.css` to `chrome` folder.
 4. rename `userChrome4win.css` to `userChrome.css`. 
@@ -27,7 +27,7 @@ a custom firefox theme. containing features below:
 
 ### for mac
 
-1. find your firefox profile folder (visit `about:profiles` ).
+1. find your firefox profile folder (visit `about:profiles`, click the `root directory` of default-release panel).
 2. create a folder named `chrome` in it.
 3. copy `userChrome4mac.css`, `userContent.css` to `chrome` folder.
 4. rename `userChrome4mac.css` to `userChrome.css`. 
