@@ -101,9 +101,9 @@
     "ignoreFoldedParent": false,
     "showNewGroupConf": true,
     "sortGroupsFirst": true,
-    "colorizeTabs": true,
+    "colorizeTabs": false,
     "colorizeTabsSrc": "domain",
-    "colorizeTabsBranches": true,
+    "colorizeTabsBranches": false,
     "colorizeTabsBranchesSrc": "domain",
     "inheritCustomColor": true,
     "previewTabs": false,
@@ -334,7 +334,7 @@
       "bxqbBUiltKrq": {
         "type": 2,
         "id": "bxqbBUiltKrq",
-        "name": "杂事",
+        "name": "Utility",
         "color": "purple",
         "iconSVG": "icon_coffee",
         "iconIMGSrc": "",
@@ -342,9 +342,16 @@
         "lockedPanel": true,
         "skipOnSwitching": true,
         "noEmpty": true,
-        "newTabCtx": "none",
-        "dropTabCtx": "none",
-        "moveRules": [],
+        "newTabCtx": "firefox-container-8",
+        "dropTabCtx": "firefox-container-8",
+        "moveRules": [
+          {
+            "id": "6EvZFK5evY9i",
+            "active": true,
+            "containerId": "firefox-container-8",
+            "topLvlOnly": false
+          }
+        ],
         "moveExcludedTo": -1,
         "bookmarksFolderId": -1,
         "newTabBtns": [],
@@ -474,6 +481,6 @@
       "removePanel"
     ]
   },
-  "sidebarCSS": "#root.root {--tabs-activated-bg: #2085dfff;}\n#root.root {--tabs-activated-fg: #feababff;}\n#root.root {--tabs-lvl-opacity: 0.6;}\n\n#root:not(:hover) .TabsPanel {--tabs-indent: 0px;}\n\n\n\n.Tab {\n  border: 1px solid transparent; /* Default border */\n  border-radius: 5px; /* Rounded corners */\n  transition: all 0.3s ease;\n}\n\n.Tab:hover {\n  border-color: #61dafb; /* Highlight border on hover */\n}\n\n.Tab.active {\n  border-color: #61dafb; /* Active tab border color */\n}\n\n#root {\n  --tabs-font-size: 14px; /* Font size for tabs */\n  --tabs-line-height: 1.5; /* Line height for better readability */\n  --tabs-padding: 10px; /* Padding for tabs */\n}\n\n\n\n.Bookmark {\n  background-color: #3c4043; /* Background for bookmarks */\n  border-radius: 4px; /* Rounded corners for bookmarks */\n}\n\n.Bookmark.folder {\n  font-weight: bold; /* Bold text for folders */\n  color: #f39c12; /* Distinct color for folders */\n}\n",
+  "sidebarCSS": "#root.root {--tabs-activated-bg: #2085dfff;}\n#root.root {--tabs-activated-fg: #feababff;}\n#root.root {--tabs-lvl-opacity: 0.6;}\n\n#root:not(:hover) .TabsPanel {--tabs-indent: 0px;}\n\n\n\n.Tab {\n  border: 1px solid transparent; /* Default border */\n  border-radius: 5px; /* Rounded corners */\n  transition: all 0.3s ease;\n}\n\n.Tab:hover {\n  border-color: #61dafb; /* Highlight border on hover */\n}\n\n.Tab.active {\n  border-color: #61dafb; /* Active tab border color */\n}\n\n#root {\n  --tabs-font-size: 14px; /* Font size for tabs */\n  --tabs-line-height: 1.5; /* Line height for better readability */\n  --tabs-padding: 10px; /* Padding for tabs */\n}\n\n\n\n.Bookmark {\n  background-color: #3c4043; /* Background for bookmarks */\n  border-radius: 4px; /* Rounded corners for bookmarks */\n}\n\n.Bookmark.folder {\n  font-weight: bold; /* Bold text for folders */\n  color: #f39c12; /* Distinct color for folders */\n}\n\n#sidebar {\n  border-radius: 15px !important;\n}",
   "ver": "5.2.0.8"
 }
