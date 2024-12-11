@@ -176,39 +176,57 @@ See the above repository for updates as well as full license text. */
   border-left-style: solid !important; 
 }
 
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/menubar_in_main_toolbar.css made available under Mozilla Public License v. 2.0
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/hide_tabs_toolbar_v2.css made available under Mozilla Public License v. 2.0
 See the above repository for updates as well as full license text. */
 
-/* Make menubar permanently enabled or this isn't going to work */
+/* This requires Firefox 133+ to work */
 
-#navigator-toolbox{ --uc-menubar-height: 34px; }
-:root[uidensity="compact"] #navigator-toolbox{ --uc-menubar-height: 30px }
-
-#titlebar{
-  flex-direction: column-reverse;
-  -moz-appearance: none !important;
+@media (-moz-bool-pref: "sidebar.verticalTabs"){
+  #sidebar-main{
+    visibility: collapse;
+  }
 }
-
-#toolbar-menubar{
-  margin-bottom: calc(0px - var(--uc-menubar-height));
-  height: var(--uc-menubar-height);
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
+@media (-moz-bool-pref: "userchrome.force-window-controls-on-left.enabled"){
+  #nav-bar > .titlebar-buttonbox-container{
+    order: -1 !important;
+    > .titlebar-buttonbox{
+      flex-direction: row-reverse;
+    }
+  }
 }
-
-#menubar-items{
-  justify-content: center;
-  pointer-events: initial;
-  margin-top: 3px;
-  color: var(--toolbar-color);
+@media not (-moz-bool-pref: "sidebar.verticalTabs"){
+  #TabsToolbar:not([customizing]){
+    visibility: collapse;
+  }
+  :root[sizemode="fullscreen"] #nav-bar > .titlebar-buttonbox-container{
+    display: flex !important;
+  }
+  :root:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar:not([autohide="false"]) ~ #nav-bar{
+    > .titlebar-buttonbox-container{
+      display: flex !important;
+    }
+    :root[sizemode="normal"] & {
+      > .titlebar-spacer{
+        display: flex !important;
+      }
+    }
+    :root[sizemode="maximized"] & {
+      > .titlebar-spacer[type="post-tabs"]{
+        display: flex !important;
+      }
+      @media (-moz-bool-pref: "userchrome.force-window-controls-on-left.enabled"),
+        (-moz-gtk-csd-reversed-placement),
+        (-moz-platform: macos){
+        > .titlebar-spacer[type="post-tabs"]{
+          display: none !important;
+        }
+        > .titlebar-spacer[type="pre-tabs"]{
+          display: flex !important;
+        }
+      }
+    }
+  }
 }
-/* Adjust to fit menubar items - 300px works for English locale */
-#nav-bar{ padding-left: 300px; }
-
-#toolbar-menubar > .titlebar-buttonbox-container{ display: none }
-:root:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] .titlebar-spacer,
-:root:is([tabsintitlebar],[customtitlebar]) #TabsToolbar > .titlebar-buttonbox-container{ display: flex !important; }
 
 /* ~~~~~~~~ Hidden elements styles ~~~~~~~~~ */
 #sidebar-header {
