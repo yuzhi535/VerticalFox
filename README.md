@@ -45,5 +45,10 @@ a custom firefox theme. containing features below:
 * titlebar is hidden always.
 * homepage background image is from [unsplash](https://unsplash.com/).
 
-![demo](./imgs/demo_for_customized_firefox.gif)
+demo is in my blog: [my blog link](https://blog.zayx.me/zh-cn/2024/09/02/firefox%E9%85%8D%E7%BD%AE%E5%9E%82%E7%9B%B4%E6%A0%87%E7%AD%BE%E9%A1%B5/)
+
+
+## useful tools
+
+* [betterfox](https://github.com/yokoffing/Betterfox)
 
